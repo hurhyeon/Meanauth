@@ -1,0 +1,20 @@
+<h2 class="page-header">서비스사용자리스트</h2>
+<div class="alert" role="alert">
+    <p>이서비스에등록된사용자리스트를테이블로보여줍니다.</p>
+</div>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.name }}</td>
+            <td>{{ user.username}}</td>
+            <td>{{ user.email}}</td>
+        </tr>
+    </tbody>
+</table>
